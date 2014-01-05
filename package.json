@@ -1,0 +1,25 @@
+{
+  "name": "nesh-fibrous",
+  "version": "0.0.0",
+  "description": "nesh-fibrous ============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccheever/nesh-fibrous.git"
+  },
+  "author": "Charlie Cheever <ccheever@gmail.com> (http://ccheever.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccheever/nesh-fibrous/issues"
+  },
+  "homepage": "https://github.com/ccheever/nesh-fibrous",
+  "dependencies": {
+    "use-global-fibrous": "0.0.2"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  }
+}
