@@ -1,6 +1,6 @@
 {
   "name": "nesh-fibrous",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "nesh-fibrous ============",
   "main": "index.js",
   "scripts": {

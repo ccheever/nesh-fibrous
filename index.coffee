@@ -5,7 +5,7 @@ exports.setup = (context) ->
   process.versions.fibrous = fibrous.version
   nesh.defaults.prompt = "fibrous-" + nesh.defaults.prompt
   nesh.defaults.welcome = nesh.defaults.welcome.replace "\n", " with fibrous #{ fibrous.version }\n", 1
-  #console.log "Using fibrous #{ fibrous.version } from #{ require.resolve 'fibrous' }"
+  nesh.log.debug "Using fibrous #{ fibrous.version } from #{ require.resolve 'fibrous' }"
 
 exports.postStart = (context) ->
   repl = context.repl

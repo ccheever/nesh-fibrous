@@ -9,7 +9,8 @@
     nesh = context.nesh;
     process.versions.fibrous = fibrous.version;
     nesh.defaults.prompt = "fibrous-" + nesh.defaults.prompt;
-    return nesh.defaults.welcome = nesh.defaults.welcome.replace("\n", " with fibrous " + fibrous.version + "\n", 1);
+    nesh.defaults.welcome = nesh.defaults.welcome.replace("\n", " with fibrous " + fibrous.version + "\n", 1);
+    return nesh.log.debug("Using fibrous " + fibrous.version + " from " + (require.resolve('fibrous')));
   };
 
   exports.postStart = function(context) {
