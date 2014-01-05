@@ -5,16 +5,21 @@
   fibrous = require('use-global-fibrous');
 
   exports.setup = function(context) {
-    return process.versions.fibrous = fibrous.version;
+    var nesh;
+    nesh = context.nesh;
+    process.versions.fibrous = fibrous.version;
+    nesh.defaults.prompt = "fibrous-" + nesh.defaults.prompt;
+    return nesh.defaults.welcome = nesh.defaults.welcome.replace("\n", " with fibrous " + fibrous.version + "\n", 1);
   };
 
   exports.postStart = function(context) {
     var rawEval, repl;
     repl = context.repl;
     rawEval = repl["eval"];
-    return repl["eval"] = fibrous(function(input, context, filename) {
+    repl["eval"] = fibrous(function(input, context, filename) {
       return rawEval.sync(input, context, filename);
     });
+    return repl.context.fibrous = fibrous;
   };
 
 }).call(this);
