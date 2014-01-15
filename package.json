@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ccheever/nesh-fibrous",
   "dependencies": {
-    "use-global-fibrous": "0.0.2",
+    "use-global-fibrous": ">=0.0.3",
     "optimist": "~0.6.0"
   },
   "devDependencies": {
