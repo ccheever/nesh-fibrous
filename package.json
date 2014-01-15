@@ -1,6 +1,6 @@
 {
   "name": "nesh-fibrous",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Enabled with -f or --fibrous, runs each line of REPL input inside a Fiber",
   "main": "index.js",
   "scripts": {
